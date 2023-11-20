@@ -15,6 +15,7 @@
 using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
+using LCModSync;
 
 namespace Enhancer
 {
@@ -49,6 +50,14 @@ namespace Enhancer
 
             Logger.LogInfo("Doing protection patches");
             patcher.PatchAll(typeof(SPProtectionPatches));
+        }
+
+        /*************************
+          Mod Sync Compatability
+        *************************/
+        public void sendModInfo(ModSyncPlugin request)
+        {
+            request.getModURLandName("Mom_Llama", "Lethal_Company_Enhancer");
         }
     }
 }

@@ -60,4 +60,11 @@
       <HintPath>../lib/Unity.TextMeshPro.dll</HintPath>
     </Reference>
   </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ModSync">
+      <HintPath>../lib.local/LCModSync.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
